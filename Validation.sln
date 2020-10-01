@@ -1,0 +1,50 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# RemObjects Fire
+Project("{656346D9-4656-40DA-A068-22D5425D4639}") = "ValidateTestConsoleApplication", "ValidateTestConsoleApplication\ValidateTestConsoleApplication.oxygene", "{C44D2320-8162-44DA-A784-3B126AC384A7}"
+EndProject
+Project("{656346D9-4656-40DA-A068-22D5425D4639}") = "ValidateTestUsingAspectsConsoleApplication", "ValidateTestUsingAspectsConsoleApplication\ValidateTestUsingAspectsConsoleApplication.oxygene", "{F482E71E-42C1-41EE-9230-3DA83BF28597}"
+EndProject
+Project("{656346D9-4656-40DA-A068-22D5425D4639}") = "Validation", "Validation\Validation.oxygene", "{F806783B-51DF-472E-8C66-22E67E494CAC}"
+EndProject
+Project("{656346D9-4656-40DA-A068-22D5425D4639}") = "ValidationAspects", "ValidationAspects\ValidationAspects.oxygene", "{48FF9846-2900-4156-AF0E-1CADEA6F2A15}"
+EndProject
+Project("{656346D9-4656-40DA-A068-22D5425D4639}") = "ValidationDomain", "ValidationDomain\ValidationDomain.oxygene", "{60F1DCF6-2883-490F-9B0C-B1B57F8B895D}"
+EndProject
+Project("{656346D9-4656-40DA-A068-22D5425D4639}") = "ValidationMVCApplication", "ValidationMVCApplication\ValidationMVCApplication.oxygene", "{EC6D9154-C674-4E7D-A1BE-632F480A6905}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AnyCPU = Debug|AnyCPU
+		Release|AnyCPU = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C44D2320-8162-44DA-A784-3B126AC384A7}.Debug|AnyCPU.ActiveCfg = Debug|AnyCPU
+		{C44D2320-8162-44DA-A784-3B126AC384A7}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
+		{C44D2320-8162-44DA-A784-3B126AC384A7}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
+		{C44D2320-8162-44DA-A784-3B126AC384A7}.Release|AnyCPU.Build.0 = Release|AnyCPU
+		{F482E71E-42C1-41EE-9230-3DA83BF28597}.Debug|AnyCPU.ActiveCfg = Debug|AnyCPU
+		{F482E71E-42C1-41EE-9230-3DA83BF28597}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
+		{F482E71E-42C1-41EE-9230-3DA83BF28597}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
+		{F482E71E-42C1-41EE-9230-3DA83BF28597}.Release|AnyCPU.Build.0 = Release|AnyCPU
+		{F806783B-51DF-472E-8C66-22E67E494CAC}.Debug|AnyCPU.ActiveCfg = Debug|AnyCPU
+		{F806783B-51DF-472E-8C66-22E67E494CAC}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
+		{F806783B-51DF-472E-8C66-22E67E494CAC}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
+		{F806783B-51DF-472E-8C66-22E67E494CAC}.Release|AnyCPU.Build.0 = Release|AnyCPU
+		{48FF9846-2900-4156-AF0E-1CADEA6F2A15}.Debug|AnyCPU.ActiveCfg = Debug|AnyCPU
+		{48FF9846-2900-4156-AF0E-1CADEA6F2A15}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
+		{48FF9846-2900-4156-AF0E-1CADEA6F2A15}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
+		{48FF9846-2900-4156-AF0E-1CADEA6F2A15}.Release|AnyCPU.Build.0 = Release|AnyCPU
+		{60F1DCF6-2883-490F-9B0C-B1B57F8B895D}.Debug|AnyCPU.ActiveCfg = Debug|AnyCPU
+		{60F1DCF6-2883-490F-9B0C-B1B57F8B895D}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
+		{60F1DCF6-2883-490F-9B0C-B1B57F8B895D}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
+		{60F1DCF6-2883-490F-9B0C-B1B57F8B895D}.Release|AnyCPU.Build.0 = Release|AnyCPU
+		{EC6D9154-C674-4E7D-A1BE-632F480A6905}.Debug|AnyCPU.ActiveCfg = Debug|AnyCPU
+		{EC6D9154-C674-4E7D-A1BE-632F480A6905}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
+		{EC6D9154-C674-4E7D-A1BE-632F480A6905}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
+		{EC6D9154-C674-4E7D-A1BE-632F480A6905}.Release|AnyCPU.Build.0 = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
