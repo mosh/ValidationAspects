@@ -46,11 +46,10 @@
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.Web.Mobile" />
-    <ProjectReference Include="..\ValidationDomain\ValidationDomain.oxygene">
-      <Name>ValidationDomain</Name>
-      <Project>{60f1dcf6-2883-490f-9b0c-b1b57f8b895d}</Project>
+    <ProjectReference Include="ValidationDomain">
+      <Project>{60F1DCF6-2883-490F-9B0C-B1B57F8B895D}</Project>
+      <ProjectFile>..\ValidationDomain\ValidationDomain.oxygene</ProjectFile>
       <Private>True</Private>
-      <HintPath>..\ValidationDomain\bin\Debug\ValidationDomain.dll</HintPath>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -96,10 +95,8 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Content\" />
     <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
     <Folder Include="Properties\" />
     <Folder Include="Scripts\" />
     <Folder Include="Views\" />

@@ -1,6 +1,5 @@
 ﻿namespace ValidationAspects;
 
-interface
 
 uses
   RemObjects.Oxygene.Cirrus.*,
@@ -18,6 +17,11 @@ type
   protected
   public
     class constructor;
+    begin
+      _statements := new Dictionary<string,List<Statement>>;
+      _statementsForIDataErrorInfo := new Dictionary<string,List<StatementGrouping>>;
+    end;
+
     class property Statements:Dictionary<string,List<Statement>> read _statements;
     class property StatementsForIDataErrorInfo:Dictionary<string,List<StatementGrouping>> read _statementsForIDataErrorInfo;
   end;
@@ -29,22 +33,15 @@ type
     _statements:List<Statement>;
   public
     constructor;
+    begin
+      self._statements := new List<Statement>;
+    end;
+
 
     property PropertyName:String;
     property Statements:List<Statement> read _statements;
   end;
 
-implementation
 
-class constructor StatementStorage;
-begin
-  _statements := new Dictionary<string,List<Statement>>;
-  _statementsForIDataErrorInfo := new Dictionary<string,List<StatementGrouping>>;
-end;
-
-constructor StatementGrouping;
-begin
-  self._statements := new List<Statement>;
-end;
 
 end.

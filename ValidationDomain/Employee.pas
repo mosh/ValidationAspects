@@ -1,7 +1,5 @@
 ﻿namespace ValidationDomain;
 
-interface
-
 uses
   Validation,
   ValidationAspects;
@@ -13,6 +11,10 @@ type
 
   private
     method ValidateBirthDate:Boolean;
+    begin
+      result:= assigned(self.BirthDate) and (DateTime.Compare(self.BirthDate, new DateTime(1970, 1,1))>0);
+    end;
+
 
   public
     [aspect:NumericHasValue('An Id is Required')]
@@ -31,6 +33,11 @@ type
 
     [aspect:ValidationMethod('We are not paying this employee')]
     method IsSalaryValid():Boolean;
+    begin
+      var value:Decimal := 5.5;
+      result := (Salary > 0);
+    end;
+
 
     [aspect:DoubleBetweenValues(5.5, 5.9,'Must been between ranges')]
     property SomeDoubleNumber:Double;
@@ -39,17 +46,5 @@ type
     property SomeInt64Number:Int64;
   end;
 
-implementation
-
-method Employee.IsSalaryValid(): Boolean;
-begin
-  var value:Decimal := 5.5;
-  result := (Salary > 0);
-end;
-
-method Employee.ValidateBirthDate: Boolean;
-begin
-  result:= assigned(self.BirthDate) and (DateTime.Compare(self.BirthDate, new DateTime(1970, 1,1))>0);
-end;
 
 end.

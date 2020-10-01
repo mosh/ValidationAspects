@@ -2,6 +2,7 @@
 
 uses
   System.Collections.Generic,
+  System.Linq,
   Validation;
 
 type
@@ -25,7 +26,7 @@ type
 
     end;
 
-    method GetRuleViolations():IEnumerable<RuleViolation>; iterator;
+    method GetRuleViolations:IEnumerable<RuleViolation>; iterator;
     begin
       if(self.Id < 0 )then
       begin

@@ -64,21 +64,21 @@
     <Reference Include="System.Data.DataSetExtensions">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
-    <ProjectReference Include="..\ValidationAspects\ValidationAspects.oxygene">
-      <Name>ValidationAspects</Name>
-      <Project>{48ff9846-2900-4156-af0e-1cadea6f2a15}</Project>
-      <Private>True</Private>
-      <HintPath>..\ValidationAspects\bin\Debug\ValidationAspects.dll</HintPath>
-    </ProjectReference>
-    <ProjectReference Include="..\Validation\Validation.oxygene">
-      <Name>Validation</Name>
-      <Project>{f806783b-51df-472e-8c66-22e67e494cac}</Project>
-      <Private>True</Private>
-      <HintPath>..\Validation\bin\Debug\Validation.dll</HintPath>
-    </ProjectReference>
     <Reference Include="RemObjects.Elements.Cirrus">
       <Private>True</Private>
     </Reference>
+    <ProjectReference Include="ValidationAspects">
+      <HintPath>..\ValidationAspects\bin\Debug\ValidationAspects.dll</HintPath>
+      <Project>{48FF9846-2900-4156-AF0E-1CADEA6F2A15}</Project>
+      <ProjectFile>..\ValidationAspects\ValidationAspects.oxygene</ProjectFile>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="Validation">
+      <HintPath>..\Validation\bin\Debug\Validation.dll</HintPath>
+      <Project>{F806783B-51DF-472E-8C66-22E67E494CAC}</Project>
+      <ProjectFile>..\Validation\Validation.oxygene</ProjectFile>
+      <Private>True</Private>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Employee.pas" />

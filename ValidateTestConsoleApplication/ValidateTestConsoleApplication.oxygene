@@ -101,9 +101,11 @@
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
-    <ProjectReference Include="..\Validation\Validation.oxygene">
+    <ProjectReference Include="Validation">
+      <HintPath>..\Validation\bin\Debug\Validation.dll</HintPath>
       <Project>{F806783B-51DF-472E-8C66-22E67E494CAC}</Project>
-      <Name>Validation</Name>
+      <ProjectFile>..\Validation\Validation.oxygene</ProjectFile>
+      <Private>True</Private>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

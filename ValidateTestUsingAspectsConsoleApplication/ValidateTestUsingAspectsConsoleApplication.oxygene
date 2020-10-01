@@ -101,24 +101,26 @@
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
-    <ProjectReference Include="..\ValidationDomain\ValidationDomain.oxygene">
-      <Name>ValidationDomain</Name>
-      <Project>{60f1dcf6-2883-490f-9b0c-b1b57f8b895d}</Project>
+    <Reference Include="RemObjects.Elements.Cirrus">
       <Private>True</Private>
-      <HintPath>..\ValidationDomain\bin\Debug\ValidationDomain.dll</HintPath>
-    </ProjectReference>
-    <ProjectReference Include="..\Validation\Validation.oxygene">
-      <Project>{F806783B-51DF-472E-8C66-22E67E494CAC}</Project>
-      <Name>Validation</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ValidationAspects\ValidationAspects.oxygene">
-      <Project>{48FF9846-2900-4156-AF0E-1CADEA6F2A15}</Project>
-      <Name>ValidationAspects</Name>
-    </ProjectReference>
-    <Reference Include="RemObjects.Oxygene.Cirrus, Version=3.0.22.0, Culture=neutral, PublicKeyToken=3df3cad1b7aa5098">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\bin\RemObjects.Oxygene.Cirrus.dll</HintPath>
     </Reference>
+    <ProjectReference Include="ValidationDomain">
+      <Project>{60F1DCF6-2883-490F-9B0C-B1B57F8B895D}</Project>
+      <ProjectFile>..\ValidationDomain\ValidationDomain.oxygene</ProjectFile>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="ValidationAspects">
+      <HintPath>..\ValidationAspects\bin\Debug\ValidationAspects.dll</HintPath>
+      <Project>{48FF9846-2900-4156-AF0E-1CADEA6F2A15}</Project>
+      <ProjectFile>..\ValidationAspects\ValidationAspects.oxygene</ProjectFile>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="Validation">
+      <HintPath>..\Validation\bin\Debug\Validation.dll</HintPath>
+      <Project>{F806783B-51DF-472E-8C66-22E67E494CAC}</Project>
+      <ProjectFile>..\Validation\Validation.oxygene</ProjectFile>
+      <Private>True</Private>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.pas" />
